@@ -1,0 +1,1 @@
+In the latest commit 'add a new connection checker decoraror', I found a design fault that I put the codition of disconnection at the 'else' branch, which lead to that query function returns a None result as the main block 's result, which is very not good. So I changed that return None into the raise Exception.
